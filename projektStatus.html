@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Bob Entreprise - Projektstatus</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/c8dabf5208.js" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+  <!--Navigationbar-->
+  <div id="navbar-placeholder"></div>
+  
+  <!-- PageHeader -->
+  <div id="pageHeader-status" class="page-header-wrapper">
+    <div class="page-header text-center">
+      <div class="page-header-content">
+        <h1>
+          <span class="text-white m-0 large-heading slide-in-right">Projekt</span>
+          <br>
+          <span class="ghost-text m-0 large-heading slide-in-left">Status</span>
+        </h1>
+      </div>
+      <div class="page-header-triangles">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Pageheader -->
+
+  <!-- Filters -->
+  <div class="container-fluid page-content">
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center justify-content-center filter-wrapper">
+        <h6>Projekttype</h6>
+        <div id="filtersProjectType" class="filter-container col-12 col-lg-6">
+          <!-- Will be radiobuttons eventually, where it will be possible to mark more than one item --> 
+          <a href="#" class="btn ghost-btn filter-btn">Residentiel</a>
+          <a href="#" class="btn ghost-btn filter-btn">Kommerciel</a>
+          <a href="#" class="btn ghost-btn filter-btn">Industrielt</a>
+          <a href="#" class="btn ghost-btn filter-btn">Vejkonstruktion</a>
+        </div>
+        <h6>Projektstatus</h6>
+        <div id="filtersProjectStatus" class="filter-container col-12 col-lg-8">
+          <a href="#" class="btn ghost-btn filter-btn">Planlægning</a>
+          <a href="#" class="btn ghost-btn filter-btn">Igangværende</a>
+          <a href="#" class="btn ghost-btn filter-btn">Afsluttet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="currentProjects" class="container">
+
+    <!-- HIDE for now -->
+    <!-- When JS is allowed, possibility to toggle between table and gallery view -->
+    <!-- Table view will include all parameters needed-->
+    <a href="#" class="hide">Tabelvisning</a>
+
+    <!-- Test row 1 -->
+    <!-- All projects will have their own project pop up, where you can see more details and more pictures if available, but as there is no JS allowed, this will have to wait :-) -->
+    <div class="row project-row">
+
+      <div class="col-12 col-lg-4 project-small">
+        <div class="row flex-column">
+
+          <!-- test project 1 -->
+          <!-- hover over/out animation on all test-projects will be improved when JS is allowed -->
+          <div class="project-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="/images/currentProjects/office-837645_1280.jpg" alt="Borchs Gård 41a">
+            </a>
+            <div class="project-info">
+              <div class="project-info-inner text-center">
+                <h6>Projekt navn</h6>
+                <h6>Borchs Gård 41a</h6>
+              </div>
+            </div>
+            <div class="project-status-ribbon">Udførelse</div>
+          </div>
+
+          <!-- test project 2 -->
+          <div class="project-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="/images/currentProjects/new-home-1664284_1280.jpg" alt="Borchs Gård 41a">
+            </a>
+            <div class="project-info">
+              <div class="project-info-inner text-center">
+                <h6>Projekt navn</h6>
+                <h6>Borchs Gård 41a</h6>
+              </div>
+            </div>
+            <div class="project-status-ribbon">Skitsering og tilbud</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- test project 3 -->
+      <div class="project-container col-12 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="/images/currentProjects/new-1572747_1280.jpg" alt="Borchs Gård 41a">
+        </a>
+        <div class="project-info">
+          <div class="project-info-inner">
+            <h6>Projekt navn</h6>
+            <h6>Borchs Gård 41a</h6>
+            <ul class="project-spec">
+              <li>
+                <i class="fa-solid fa-person"></i>
+                <p class="spec-label">Mandetimer</p>
+                <p><span class="projectStatus">55</span> timer</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Areal</p>
+                <p><span class="projectAreal">149</span> kvm</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="projectBudget">1.500.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="projectTime">11</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-status-ribbon">Planlægning</div>
+      </div>
+
+    </div>
+
+    <!-- Test row 2 -->
+    <div class="row project-row">
+
+      <div class="col-12 col-lg-4 project-small">
+        <div class="row flex-column">
+
+          <!-- test project 1 -->
+          <!-- hover over/out animation on all test-projects will be improved when JS is allowed -->
+          <div class="project-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="/images/currentProjects/office-837645_1280.jpg" alt="Borchs Gård 41a">
+            </a>
+            <div class="project-info">
+              <div class="project-info-inner text-center">
+                <h6>Projekt navn</h6>
+                <h6>Borchs Gård 41a</h6>
+              </div>
+            </div>
+            <div class="project-status-ribbon">Udførelse</div>
+          </div>
+
+          <!-- test project 2 -->
+          <div class="project-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="/images/currentProjects/new-home-1664284_1280.jpg" alt="Borchs Gård 41a">
+            </a>
+            <div class="project-info">
+              <div class="project-info-inner text-center">
+                <h6>Projekt navn</h6>
+                <h6>Borchs Gård 41a</h6>
+              </div>
+            </div>
+            <div class="project-status-ribbon">Skitsering og tilbud</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- test project 3 -->
+      <div class="project-container col-12 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="/images/currentProjects/new-1572747_1280.jpg" alt="Borchs Gård 41a">
+        </a>
+        <div class="project-info">
+          <div class="project-info-inner">
+            <h6>Projekt navn</h6>
+            <h6>Borchs Gård 41a</h6>
+            <ul class="project-spec">
+              <li>
+                <i class="fa-solid fa-list-check"></i>
+                <p class="spec-label">Status</p>
+                <p><span class="projectStatus">Planlægning</span></p>
+              </li>
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Areal</p>
+                <p><span class="projectAreal">149</span> kvm</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="projectBudget">1.500.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="projectTime">11</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-status-ribbon">Planlægning</div>
+      </div>
+
+    </div>
+
+    <div class="spacer-4"></div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder" class="mt-5">
+
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Bob Entreprise - Tidligere projekter</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/c8dabf5208.js" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+  <!--Navigationbar-->
+  <div id="navbar-placeholder"></div>
+
+  <!--Header-->
+  <div class="page-header-wrapper">
+    <div class="page-header text-center">
+      <div class="page-header-content">
+        <h1>
+          <br><span class="ghost-text m-0 large-heading slide-in-left">Portfolio</span>
+        </h1>
+      </div>
+      <div class="page-header-triangles">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-2"></div>
+
+  <!-- Carousel -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div id="CarouselPortfolio" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#CarouselPortfolio" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#CarouselPortfolio" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#CarouselPortfolio" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#CarouselPortfolio" data-bs-slide-to="3"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+
+            <!--image1-->
+            <div class="carousel-item active">
+              <a href="#Res"><img src="https://i.imgur.com/PEWkWhw.jpg" alt="Residentiel" class="d-block"> </a>
+              <div class="carousel-caption">
+                <h3>Residentiel</h3>
+                <p>Klik på billedet for at se mere</p>
+              </div>
+            </div>
+
+            <!--image2-->
+            <div class="carousel-item">
+              <a href="#Komm"><img src="https://i.imgur.com/MBxM5s8.jpg" alt="Kommerciel" class="d-block"></a>
+              <div class="carousel-caption">
+                <h3>Kommerciel</h3>
+                <p>Klik på billedet for at se mere</p>
+              </div>
+            </div>
+
+            <!--image3-->
+            <div class="carousel-item ">
+              <a href="#Indu"><img src="https://i.imgur.com/LH5bAdr.jpg" alt="Industrielt" class="d-block">
+                <div class="carousel-caption">
+              </a>
+              <h3>Industriel</h3>
+              <p>Klik på billedet for at se mere</p>
+            </div>
+          </div>
+
+          <!--image4-->
+          <div class="carousel-item ">
+            <a href="#VK"><img src="https://i.imgur.com/mohl8VO.jpg" alt="Vejkonstruktion" class="d-block">
+              <div class="carousel-caption">
+            </a>
+            <h3>Vejkonstruktioner</h3>
+            <p>Klik på billedet for at se mere</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#CarouselPortfolio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#CarouselPortfolio" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Text information abt portfolio?-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="bygninger col-md-7 mx-auto mt-3">
+        <h3><b>Vores bygningsværker</b></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus nibh eu imperdiet tincidunt. Praesent
+          quis
+          auctor sem, sed gravida mi. Aenean nisl lectus, auctor a ante ac, faucibus sodales ipsum. Sed rhoncus nec orci
+          at
+          ullamcorper. Donec vehicula, nulla facilisis fringilla eleifend, sem mi condimentum augue, ut vehicula est
+          lacus
+          ut ligula. Integer accumsan quis dui eu fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-2"></div>
+
+  <div class="container-fluid">
+
+  <!--Portfolios will have popups matching project status page-->
+  <div class="row PortfolioRows">
+    <h1 id="Res">Residentiel</h1>
+  </div>
+
+  <div class="portfolioWidth">
+    <div class="row portfolio-row">
+
+      <div class="col-5 col-lg-4 portfolio-small">
+        <div class="row flex-column">
+
+          <!-- test portfolio 1 -->
+          <!-- hover over/out animation on all test-portfolios will be improved when JS is allowed -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/pzX3FjC.jpg" alt="Beton hybel">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>Beton hybel</h6>
+                <h6>Huslodsvej 45</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Residentiel</div>
+          </div>
+
+          <!-- test portfolio 2 -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/x9pDCoU.jpg" alt="Udsigtsposten">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>Udsigtsposten</h6>
+                <h6>Balders vej 67</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Residentiel</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- test portfolio 3 -->
+      <div class="portfolio-container col-7 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="https://i.imgur.com/j2TLReV.jpg" alt="Familie hjem">
+        </a>
+        <div class="portfolio-info">
+          <div class="portfolio-info-inner">
+            <h6>Familie hjem</h6>
+            <h6>Vejlevej 457</h6>
+            <ul class="portfolio-spec">
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Areal</p>
+                <p><span class="portfolioAreal">238</span> kvm</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="portfolioBudget">1.700.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="portfolioTime">8</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-status-ribbon">Residentiel</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-2"></div>
+
+  <!-- Test row 2 -->
+  <div class="row PortfolioRows">
+    <h1 id="Komm">Kommerciel</h1>
+  </div>
+
+  <div class="portfolioWidth">
+    <div class="row portfolio-row">
+
+      <div class="col-5 col-lg-4 portfolio-small">
+        <div class="row flex-column">
+
+          <!-- test portfolio 1 -->
+          <!-- hover over/out animation on all test-portfolios will be improved when JS is allowed -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/OEF02dc.jpg" alt="Beton hybel">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>Something Inc.</h6>
+                <h6>Huslodsvej 45</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Kommerciel</div>
+          </div>
+
+          <!-- test portfolio 2 -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/Ek3mvmm.jpg" alt="Udsigtsposten">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>InsertNameHere</h6>
+                <h6>Balders vej 67</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Kommerciel</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- test portfolio 3 -->
+      <div class="portfolio-container col-7 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="https://i.imgur.com/960usw1.jpg" alt="Familie hjem">
+        </a>
+        <div class="portfolio-info">
+          <div class="portfolio-info-inner">
+            <h6>InsertOtherNameHere</h6>
+            <h6>Vejlevej 457</h6>
+            <ul class="portfolio-spec">
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Areal</p>
+                <p><span class="portfolioAreal">238</span> kvm</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="portfolioBudget">2.000.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="portfolioTime">16</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-status-ribbon">Kommerciel</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-2"></div>
+
+  <!-- Test row 2 -->
+  <div class="row PortfolioRows">
+    <h1 id="Indu">Industrielt</h1>
+  </div>
+
+  <div class="portfolioWidth">
+    <div class="row portfolio-row">
+
+      <div class="col-5 col-lg-4 portfolio-small">
+        <div class="row flex-column">
+
+          <!-- test portfolio 1 -->
+          <!-- hover over/out animation on all test-portfolios will be improved when JS is allowed -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/4p07xSZ.jpg" alt="Beton hybel">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>InsertName</h6>
+                <h6>Huslodsvej 45</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Industrielt</div>
+          </div>
+
+          <!-- test portfolio 2 -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/ua4tqlr.jpg" alt="Udsigtsposten">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>InsertName</h6>
+                <h6>Balders vej 67</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Industrielt</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- test portfolio 3 -->
+      <div class="portfolio-container col-7 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="https://i.imgur.com/Kf7G88W.jpg" alt="Familie hjem">
+        </a>
+        <div class="portfolio-info">
+          <div class="portfolio-info-inner">
+            <h6>InsertName</h6>
+            <h6>Vejlevej 457</h6>
+            <ul class="portfolio-spec">
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Areal</p>
+                <p><span class="portfolioAreal">238</span> kvm</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="portfolioBudget">15.000.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="portfolioTime">30</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-status-ribbon">Industrielt</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-2"></div>
+
+  <!-- Test row 2 -->
+  <div class="row PortfolioRows">
+    <h1 id="VK">Vejkonstruktion</h1>
+  </div>
+
+  <div class="portfolioWidth">
+    <div class="row portfolio-row">
+
+      <div class="col-5 col-lg-4 portfolio-small">
+        <div class="row flex-column">
+
+          <!-- test portfolio 1 -->
+          <!-- hover over/out animation on all test-portfolios will be improved when JS is allowed -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/E2Jx0Ry.jpg" alt="Beton hybel">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>Bridge</h6>
+                <h6>Huslodsvej</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Vejkonstruktion</div>
+          </div>
+
+          <!-- test portfolio 2 -->
+          <div class="portfolio-container col-12">
+            <a href="#">
+              <img class="img-fluid" src="https://i.imgur.com/Qv5JgIr.jpg" alt="Udsigtsposten">
+            </a>
+            <div class="portfolio-info">
+              <div class="portfolio-info-inner text-center">
+                <h6>Bridge</h6>
+                <h6>Balders vej</h6>
+              </div>
+            </div>
+            <div class="portfolio-status-ribbon">Vejkonstruktion</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- test portfolio 3 -->
+      <div class="portfolio-container col-7 col-lg-8">
+        <a href="#">
+          <img class="img-fluid" src="https://i.imgur.com/NFVvn0W.jpg" alt="Familie hjem">
+        </a>
+        <div class="portfolio-info">
+          <div class="portfolio-info-inner">
+            <h6>Bridge</h6>
+            <h6>Vejlevej</h6>
+            <ul class="portfolio-spec">
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Bredde</p>
+                <p><span class="portfolioAreal">7</span> meter</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-square-full"></i>
+                <p class="spec-label">Længde</p>
+                <p><span class="portfolioAreal">12</span> meter</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-coins"></i>
+                <p class="spec-label">Budget</p>
+                <p><span class="portfolioBudget">5.500.000</span> kr.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <p class="spec-label">Tidshorisont</p>
+                <p><span class="portfolioTime">17</span> mdr.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio-status-ribbon">Vejkonstruktion</div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  <div class="spacer-4"></div>
+
+
+  <!-- Footer -->
+  <div id="footer-placeholder" class="mt-5">
+
+</body>
+
+</html>

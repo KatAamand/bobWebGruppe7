@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Bob Entreprise - Kontakt</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/c8dabf5208.js" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+  <!--Navigationbar-->
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- Om os / bliv kontakt / kontakt os sektion delt i 3-->
+  <div class="spacer-4"></div>
+  <div class="container overflow-hidden">
+    <div class="row">
+      <!-- 'Om os' sektion med animation-->
+      <div class="col-lg-4 col-ContactBoxLeft pageBoxes slide-in-left-contact1">
+
+        <h1>Vores historie danner fremtidens byggeri</h1>
+        <p>Vi er stolte over at være en del af det danske byggefællesskab og dele vores passion for at skabe og
+          forvandle omgivelser. Byggemand Bob's historie begyndte for mange år siden, da vores
+          grundlægger, Bob, først begyndte at hamre og save med en drøm om at bygge noget stort og
+          betydningsfuldt...
+        </p>
+      </div>
+      <!-- Kontaktformular med fields, dropdowns, radiobuttons og submitbutton. Også med animation -->
+      <div class="col-lg-4 col-ContactBoxMid pageBoxes slide-in-left-contact2">
+        <h3>
+          Vil du gerne kontaktes?
+        </h3>
+
+        <!-- Kontakformular fields-->
+        <div class="mb-3">
+          <lable class="form-label" for="ContactFormInputName"></lable>
+          <input class="form-label" type="name" id="ContactFormInputName" placeholder="Indtast navn">
+        </div>
+        <div class="mb-3">
+          <lable class="form-label" for="ContactFormInputPhone"></lable>
+          <input class="form-label" type="email" id="ContactFormInputPhone" placeholder="Indtast telefonnummer">
+        </div>
+        <div class="mb-3">
+          <lable class="form-label" for="ContactFormInputEmail"></lable>
+          <input class="form-label" type="phone" id="ContactFormInputEmail" placeholder="Indtast e-mail">
+        </div>
+
+        <!-- Kontakformular dropdown-->
+        <div class="mb-1">
+          <h3>Hvilken afdeling vil du kontaktes af?</h3>
+          <select class="form-select form-dropdown" aria-label="Kontaktbox dropdown">
+            <option selected>Vælg afdeling</option>
+            <option value="Ledelse">Ledelse</option>
+            <option value="Salg">Salg</option>
+            <option value="Bogholderi">Bogholderi</option>
+            <option value="Byggeledelse">Byggeledelse</option>
+            <option value="Andet">Andet</option>
+          </select>
+        </div>
+
+        <div class="spacer-2"></div>
+
+        <!-- Kontakformular radiobutton-->
+        <div class="mb-1">
+          <h3>Hvilken projekttype drejer henvendelsen sig om?</h3>
+          <div class="form-check form-check-inline" aria-label="Kontaktbox radiobuttons">
+            <input class="form-check-input" type="checkBox" id="checkBox1" value="Vejarbejde">
+            <label class="form-check-label" for="checkBox1">Vejarbejde</label>
+          </div>
+          <div class="form-check form-check-inline" aria-label="Kontaktbox radiobuttons">
+            <input class="form-check-input" type="checkBox" id="checkBox1" value="Parcelhusbyggeri">
+            <label class="form-check-label" for="checkBox2">Parcelhusbyggeri</label>
+          </div>
+          <div class="form-check form-check-inline" aria-label="Kontaktbox radiobuttons">
+            <input class="form-check-input" type="checkBox" id="checkBox1" value="Industri">
+            <label class="form-check-label" for="checkBox4">Industri</label>
+          </div>
+          <div class="form-check form-check-inline" aria-label="Kontaktbox radiobuttons">
+            <input class="form-check-input" type="checkBox" id="checkBox1" value="Højhusbyggeri">
+            <label class="form-check-label" for="checkBox3">Højhusbyggeri</label>
+          </div>
+          <div class="form-check form-check-inline" aria-label="Kontaktbox radiobuttons">
+            <input class="form-check-input" type="checkBox" id="checkBox1" value="Andet">
+            <label class="form-check-label" for="checkBox5">Andet</label>
+          </div>
+        </div>
+
+        <!-- Kontakformular submit-->
+        <div class="mb-1 pageBoxes">
+          <button class="btn btn-accent" type="submit">Send forespørgsel</button>
+        </div>
+      </div>
+
+
+      <!-- Kontakt os sektion med href-links og animation -->
+      <div class="col-lg-4 col-ContactBoxRight pageBoxes slide-in-left-contact3">
+        <h3>
+          Kontakt os her:
+        </h3>
+        <div class="d-flex">
+          <a class="btn-contactPage" href="tel:+4588888888"><i class="bi bi-telephone-inbound"></i></a>
+          <p>+45 88 88 88 88</p>
+        </div>
+        <div class="d-flex">
+          <a class="btn-contactPage" href="mailto: kontakabc@bobthebuilder.com"> <i class="bi bi-envelope-at"></i></a>
+          <p>kontakt@TheBuilder.com</p>
+        </div>
+        <div class="d-flex">
+          <i class="bi bi-clock"></i>
+          <p>Man-fre: 7:30-15:00</p>
+        </div>
+        <div class="d-flex">
+          <a class="btn-contactPage" role="button" href="http://maps.google.com/?q= via university Horsens"><i
+              class="bi bi-geo-alt"></i></a>
+          <p>Bob the builder avenue 1, 8700 Horsens</p>
+        </div>
+        <div class="spacer-4"></div>
+        <div class="d-flex flex-column">
+          <i class="bi bi-chat-right-quote"></i>
+          <p><i>It's better to do one job well than two jobs not so well.</i></p>
+          <p>- Bob</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-4"></div>
+
+  <div class="container">
+    <!-- Row med CEO-niveau medarbejdere -->
+    <div class="row EmployeeRows">
+      <h1>Øverste ledelse</h1>
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/BobPB.PNG">
+        </div>
+        <ul>
+          <li>
+            <h4>Bob</h4>
+          </li>
+          <li>
+            <p>CEO</p>
+          </li>
+          <li>
+            <a href="mailto: 343923@VIAUC.dk">
+              <p>Bob@TheBuilder.com</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 12 34 56 78</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Row med mellemled af medarbejdere - Partnere, senior-medarbejdere -->
+
+    <div class="row EmployeeRows">
+      <h1>Mellemledere</h1>
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/Bob_Gravko.jpg">
+        </div>
+        <ul>
+          <li>
+            <h4>Sara Kofod Andreasen</h4>
+          </li>
+          <li>
+            <p>Senior Partner</p>
+          </li>
+          <li>
+            <a href="mailto: 344441@VIAUC.dk">
+              <p>344441@VIAUC.dk</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 11 11 11 11</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/Bob_Fugleskræmsel.PNG">
+        </div>
+        <ul>
+          <li>
+            <h4>Katrine Aamand</h4>
+          </li>
+          <li>
+            <p>Senior Partner</p>
+          </li>
+          <li>
+            <a href="mailto: 344848@VIAUC.dk">
+              <p>344848@VIAUC.dk</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 12 12 12 12</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/Bob_kranbil.jpg">
+        </div>
+        <ul>
+          <li>
+            <h4>Fatoma Said Ali Hersi</h4>
+          </li>
+          <li>
+            <p>Senior Partner</p>
+          </li>
+          <li>
+            <a href="mailto: 344137@VIAUC.dk">
+              <p>344137@VIAUC.dk</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 14 14 14 14</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Row med nederste led - praktikanter, studenterslaver osv. -->
+    <div class="row EmployeeRows">
+      <h1>Studentermedhjælpere</h1>
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/Bob_Lastbilpålarvefødder.jpg">
+        </div>
+        <ul>
+          <li>
+            <h4>Rasmus Sterup</h4>
+          </li>
+          <li>
+            <p>Praktikant</p>
+          </li>
+          <li>
+            <a href="mailto: 343923@VIAUC.dk">
+              <p>343923@VIAUC.dk</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 15 15 15 15</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-10 col-xl-3 employeeBoxes">
+        <div class="employeeImgContainer">
+          <img src="images/Bob_Tromle.jpg">
+        </div>
+        <ul>
+          <li>
+            <h4>Marcus Grøne Lykkegaard</h4>
+          </li>
+          <li>
+            <p>Seniór Praktikant & Betonansvarlig</p>
+          </li>
+          <li>
+            <a href="mailto: 344713@VIAUC.dk">
+              <p>344713@VIAUC.dk</p>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+4521592520">
+              <p>+45 13 13 13 13</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder" class="mt-5">
+
+</body>
+
+</html>
