@@ -31,8 +31,24 @@ function buildProjectContent(projectType, projectId, projectName, projectStatus,
   const paragraphClose = '</p>';
   const headerOpen = '<h6>';
   const headerClose = '</h6>'; 
+  const divOpen = '<div>'; 
+  const divClose = '</div>'; 
  
   console.log("Hello from buildProjectContent"); 
+
+  result += '<div class="project-info">';
+  result += '<div class="project-info-inner text-center">';
+  
+    result += headerOpen + "Projekt navn" + headerClose;
+    result += headerOpen + projectName + headerClose; // Name
+    result += paragraphOpen + "Klik for at se projektinformation" + paragraphClose;
+
+  result += divClose;
+
+  result += divClose; 
+  
+  result += '<div class="project-status-ribbon">' + projectType + divClose;
+
 
   return result;
 }
@@ -41,7 +57,6 @@ function buildProjectContent(projectType, projectId, projectName, projectStatus,
 function getProjects() {
   $.getJSON('\project_test_data_50_projects.json', showProjects)
 }
-
 
 function showProjects(jsonObj){
   const projectsWrapper = $("#projectsPlaceholder"); 
@@ -63,7 +78,7 @@ function showProjects(jsonObj){
       const projectEstBudget = project.projectBudget;
       const projectEstTime = project.projectEstimatedTime;
       const projectEstManHours = project.projectEstimatedManHours;
-      const projectEstMaterialExpenses = project.projectEstimatedMaterialExpenses;
+      const projectEstMaterialExpenses = project.projectEstimatedMaterialExpenses;      
 
       projectContainer = buildProjectContent(); 
     }
